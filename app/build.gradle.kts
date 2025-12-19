@@ -57,4 +57,11 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.8.0")
+    // Icons
+    implementation("androidx.compose.material:material-icons-extended:1.7.0")
+    // Serialization (for passing complex objects if needed, though mostly using state)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 }
