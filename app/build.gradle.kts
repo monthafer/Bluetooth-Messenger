@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    kotlin("plugin.serialization") version "1.9.20"
 }
 
 android {
@@ -64,4 +65,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.7.0")
     // Serialization (for passing complex objects if needed, though mostly using state)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    
+    // Lifecycle runtime compose
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 }
